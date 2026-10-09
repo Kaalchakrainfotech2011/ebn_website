@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms & Conditions – Elite Business Network (EBN)</title>
+  <meta name="description"
+    content="Official Terms of Service and conditions for members and users of Elite Business Network (EBN)." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css?v=1.0.2" />
+
+  <style>
+    :root {
+      --terms-sidebar-width: 280px;
+    }
+    
+    body {
+      padding-top: 100px;
+      background-color: #f8fafc;
+    }
+
+    .terms-header {
+      background: var(--gradient);
+      color: var(--white);
+      padding: 60px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .terms-header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(232, 160, 32, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+
+    .terms-header::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(35, 86, 160, 0.2) 0%, transparent 60%);
+      border-radius: 50%;
+    }
+
+    .terms-title {
+      font-weight: 800;
+      font-size: 2.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .terms-subtitle {
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 500;
+    }
+
+    .terms-sidebar {
+      position: sticky;
+      top: 120px;
+      max-height: calc(100vh - 150px);
+      overflow-y: auto;
+      padding-right: 15px;
+    }
+
+    /* Custom Scrollbar for sidebar */
+    .terms-sidebar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .terms-sidebar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .terms-sidebar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 2px;
+    }
+
+    .toc-link {
+      display: block;
+      padding: 10px 15px;
+      color: var(--text-light);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-left: 3px solid transparent;
+      transition: all 0.2s ease;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .toc-link:hover {
+      color: var(--primary);
+      background-color: rgba(26, 60, 107, 0.05);
+      border-left-color: var(--primary-light);
+    }
+
+    .toc-link.active {
+      color: var(--primary);
+      font-weight: 700;
+      background-color: rgba(26, 60, 107, 0.08);
+      border-left-color: var(--primary);
+    }
+
+    .terms-card {
+      background-color: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 40px;
+      margin-bottom: 30px;
+    }
+
+    .terms-section {
+      scroll-margin-top: 130px;
+      margin-bottom: 40px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .terms-section h3 {
+      color: var(--dark);
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .terms-section h4 {
+      color: var(--dark-2);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .terms-section p {
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .terms-section ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .terms-section li {
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .grievance-box {
+      background-color: var(--bg-subtle);
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--accent);
+      padding: 25px;
+      margin-top: 20px;
+    }
+
+    .grievance-title {
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 15px;
+    }
+
+    /* Highlight contact details */
+    .contact-badge {
+      display: inline-block;
+      background-color: rgba(26, 60, 107, 0.05);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================
+     NAVBAR
+  ============================== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top py-3 navbar-scrolled">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
+        <img src="logo.png" alt="EBN Logo" class="brand-logo-img"
+          style="height: 96px; width: 96px; object-fit: contain; border-radius: 16px; margin-top: -20px; margin-bottom: -20px;">
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-3 text-dark"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#difference">Why EBN</a></li>
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#membership">Membership</a></li>
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#events-training">Events & Training</a></li>
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link fw-500" href="index.html#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a href="index.html#apply" class="btn btn-shiny-member px-4 py-2 rounded-pill">Become a Member</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================
+     HERO / HEADER
+  ============================== -->
+  <header class="terms-header">
+    <div class="container text-center py-4">
+      <span class="section-label light mb-3">Legal Documentation</span>
+      <h1 class="terms-title text-white">TERMS OF SERVICE</h1>
+      <p class="terms-subtitle mt-2 mb-0">Effective Date: 27 May 2026</p>
+    </div>
+  </header>
+
+  <!-- ============================
+     MAIN CONTENT
+  ============================== -->
+  <main class="container py-5">
+    <div class="row">
+      <!-- Table of Contents Sidebar -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        <div class="terms-sidebar">
+          <h5 class="fw-700 text-dark mb-3 px-3">Table of Contents</h5>
+          <nav class="nav flex-column">
+            <a class="toc-link active" href="#sec-intro">Introduction</a>
+            <a class="toc-link" href="#sec-1">1. Who May Use the Platform</a>
+            <a class="toc-link" href="#sec-2">2. Privacy</a>
+            <a class="toc-link" href="#sec-3">3. Member Conduct & Content</a>
+            <a class="toc-link" href="#sec-4">4. Membership & Referral Data</a>
+            <a class="toc-link" href="#sec-5">5. Using the Platform</a>
+            <a class="toc-link" href="#sec-6">6. Your Account</a>
+            <a class="toc-link" href="#sec-7">7. Termination</a>
+            <a class="toc-link" href="#sec-8">8. Third-Party App Store Terms</a>
+            <a class="toc-link" href="#sec-9">9. General Terms</a>
+            <a class="toc-link" href="#sec-10">10. Copyright Infringement</a>
+            <a class="toc-link" href="#sec-11">11. Copyright Counter-Notice</a>
+            <a class="toc-link" href="#sec-12">12. Trademark Infringement</a>
+            <a class="toc-link" href="#sec-13">13. Trademark Counter-Notice</a>
+            <a class="toc-link" href="#sec-14">14. Grievance Redressal</a>
+            <a class="toc-link" href="#sec-15">15. Changes to These Terms</a>
+            <a class="toc-link" href="#sec-16">16. Contact Us</a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Terms Text Card -->
+      <div class="col-lg-9 col-md-12">
+        <div class="terms-card">
+          <!-- Introduction -->
+          <section id="sec-intro" class="terms-section">
+            <p class="lead fw-600 text-dark">
+              Elite Business Network LLP (EBN), a limited liability partnership registered under the Limited Liability Partnership Act, 2008, operating under the brand name “EBN”, and having its registered office at A-309, Titanium Heights, Makarba, Ahmedabad, Gujarat, India – 382210 ("EBN", "we", "us", or "our") operates and makes available the EBN mobile application, website, member portal, and related business-networking and referral services (collectively, the "Platform" or "Services").
+            </p>
+            <p>
+              These Terms of Service (the "Terms") govern your access to and use of the Platform. By creating an account, accessing, or using the Platform in any way, you (a "Member", "you", or "your") agree to be bound by these Terms. EBN may update these Terms from time to time as described in Section 15; your continued use of the Platform after an update takes effect constitutes your acceptance of the revised Terms.
+            </p>
+            <p>
+              If there is any conflict between the English-language version of these Terms and a translation into any other language, the English version shall control and prevail for all purposes of interpretation.
+            </p>
+          </section>
+
+          <!-- 1. Who May Use the Platform -->
+          <section id="sec-1" class="terms-section">
+            <h3>1. Who May Use the Platform</h3>
+            
+            <h4>1.1 Eligibility</h4>
+            <p>You may access and use the Platform only if you:</p>
+            <ul>
+              <li>Are at least 18 years of age;</li>
+              <li>Have the legal capacity to enter into a binding contract under the Indian Contract Act, 1872 (or, if you are located outside India, under the law applicable to you in your jurisdiction);</li>
+              <li>Have completed EBN's chapter membership enrolment process and are a Member in good standing; and</li>
+              <li>Agree to comply with these Terms and all applicable laws, rules, and regulations.</li>
+            </ul>
+
+            <h4>1.2 Restrictions</h4>
+            <p>
+              You may not access or use the Platform if you are legally incapacitated, disqualified from entering into contracts under applicable law, or if your EBN membership has lapsed, been suspended, or been terminated.
+            </p>
+
+            <h4>1.3 Entities and Authorised Representatives</h4>
+            <p>
+              If you are accepting these Terms, or using the Platform, on behalf of a company, firm, partnership, government body, or other organisation, you represent and warrant that you have the authority to bind that entity to these Terms, and “you” in these Terms then refers to that entity as well as to you personally.
+            </p>
+          </section>
+
+          <!-- 2. Privacy -->
+          <section id="sec-2" class="terms-section">
+            <h3>2. Privacy</h3>
+            <p>
+              Our Privacy Policy, available at <a href="https://ebnconnect.com" target="_blank">https://ebnconnect.com</a>, explains how EBN collects, uses, stores, shares, and protects information you provide when using the Platform, in accordance with the Information Technology Act, 2000, the Digital Personal Data Protection Act, 2023, and other applicable data protection laws.
+            </p>
+            <p>
+              By using the Platform, you acknowledge that your personal data will be collected and processed as described in the Privacy Policy, including any transfer of data to service providers or affiliates located outside India for hosting, processing, or storage, subject to the safeguards described there. We encourage you to read the Privacy Policy carefully before using the Platform.
+            </p>
+          </section>
+
+          <!-- 3. Member Conduct and Content -->
+          <section id="sec-3" class="terms-section">
+            <h3>3. Member Conduct and Content</h3>
+            
+            <h4>3.1 Responsibility for Content</h4>
+            <p>
+              You are solely responsible for any content, information, comments, referrals, testimonials, photographs, or other material you post, upload, or share through the Platform (“Content”), and for ensuring that your use of the Platform and your Content comply with all applicable laws. Do not submit Content unless you are prepared to be accountable for it.
+            </p>
+
+            <h4>3.2 Standard of Conduct</h4>
+            <p>
+              You agree to act honestly, fairly, professionally, and in good faith in all interactions on the Platform and at any EBN chapter meeting, training, or event, and to refrain from conduct that is discourteous, deceptive, misleading, or unethical.
+            </p>
+
+            <h4>3.3 No Endorsement by EBN</h4>
+            <p>
+              EBN does not actively monitor Content posted by Members and does not guarantee its accuracy, completeness, or reliability. You may encounter Content you consider objectionable, and you access, rely on, and use all Content entirely at your own risk. EBN is not liable for any loss arising from Content posted by Members.
+            </p>
+
+            <h4>3.4 Prohibited Conduct</h4>
+            <p>You agree that you will NOT use the Platform to:</p>
+            <ul>
+              <li>Post, transmit, or share content that is unlawful, harmful, threatening, abusive, defamatory, obscene, invasive of another person's privacy, hateful, or discriminatory, or that could harm a minor in any way;</li>
+              <li>Impersonate any person or entity, including an EBN representative, chapter leader, or fellow Member, or misrepresent your affiliation with any person or entity;</li>
+              <li>Forge headers or otherwise manipulate identifiers to disguise the origin of any content transmitted through the Platform;</li>
+              <li>Post or share Content that you do not have the legal right to share, or that infringes any patent, trademark, trade secret, copyright, or other proprietary right of a third party;</li>
+              <li>Send unsolicited advertising, promotional material, “spam”, or chain messages through the Platform;</li>
+              <li>Upload or transmit any virus, malware, ransomware, or other harmful code;</li>
+              <li>Interfere with, disrupt, or attempt to gain unauthorised access to the Platform, its servers, or any connected network or system;</li>
+              <li>Violate any applicable local, national, or international law or regulation; or</li>
+              <li>Stalk, threaten, or otherwise harass another person.</li>
+            </ul>
+
+            <h4>3.5 EBN's Discretion</h4>
+            <p>
+              EBN may, but is under no obligation to, review, screen, refuse, move, or remove any Content that it believes, in its sole discretion, violates these Terms or is otherwise objectionable, without prior notice and without liability to you.
+            </p>
+          </section>
+
+          <!-- 4. Membership Classification and Referral Data -->
+          <section id="sec-4" class="terms-section">
+            <h3>4. Membership Classification and Referral Data</h3>
+            
+            <h4>4.1 Professional Classification Exclusivity</h4>
+            <p>
+              EBN's chapter model is built around single-classification referral networking. Accordingly, each EBN chapter may admit only one (1) Member holding a given approved professional or business classification at any time. EBN and/or the relevant chapter leadership retain sole discretion to define, interpret, and update classifications, to approve or decline a membership application on classification grounds, and to resolve any classification conflict between existing or prospective Members.
+            </p>
+
+            <h4>4.2 Licence to EBN</h4>
+            <p>
+              By submitting Content, or by using the Platform to record referrals, introductions, testimonials, or business relationships, you grant EBN a worldwide, non-exclusive, royalty-free licence, with the right to sublicense, to host, use, reproduce, and display that Content for the purpose of operating, securing, promoting, and improving the Platform and EBN's business generally.
+            </p>
+
+            <h4>4.3 Networking Data</h4>
+            <p>
+              EBN may compile, aggregate, and analyse referral, introduction, testimonial, and relationship activity across Members to generate networking and relationship insights (“Networking Data”). As between you and EBN, EBN owns all right, title, and interest in Networking Data, which EBN has invested substantial resources to collect, organise, and maintain.
+            </p>
+
+            <h4>4.4 Restrictions on Networking Data and Competing Use</h4>
+            <p>You agree that you will NOT, without EBN's prior written consent:</p>
+            <ul>
+              <li>Copy, scrape, distribute, sell, or otherwise commercially exploit Networking Data; or</li>
+              <li>Use Networking Data, or any referral, introduction, or relationship information obtained through the Platform, to form, operate, join as a competing organiser, or otherwise assist any networking or referral group that competes with EBN or with the single-classification model described in Section 4.1.</li>
+            </ul>
+            <p>
+              If you, or any company, organisation, or other party on whose behalf you have acted, breach this Section 4.4, you agree to pay EBN's reasonable attorneys' fees and costs incurred in enforcing this provision or otherwise prosecuting a claim relating to it.
+            </p>
+
+            <h4>4.5 Departing Members</h4>
+            <p>
+              Where your EBN membership or a chapter leadership role ends, you must, at EBN's or the relevant chapter's request, promptly cease using and return or destroy any Networking Data, member lists, or other confidential materials you obtained through the Platform, except as required for EBN's own recordkeeping.
+            </p>
+          </section>
+
+          <!-- 5. Using the Platform -->
+          <section id="sec-5" class="terms-section">
+            <h3>5. Using the Platform</h3>
+            
+            <h4>5.1 Changes to the Platform</h4>
+            <p>
+              EBN's Services are continually evolving. We may modify, suspend, or discontinue any feature of the Platform, temporarily or permanently, and may impose usage or storage limits, at our discretion and at any time, without liability to you.
+            </p>
+
+            <h4>5.2 Advertising</h4>
+            <p>
+              EBN and its partners may display advertising on the Platform, including in conjunction with the display of Content, in accordance with the Privacy Policy.
+            </p>
+
+            <h4>5.3 Lawful Access Only</h4>
+            <p>
+              You agree to access the Platform only through the interfaces and methods EBN provides, and not to misuse the Platform by interfering with it or accessing it other than as intended.
+            </p>
+
+            <h4>5.4 Disclosure</h4>
+            <p>
+              EBN may access, preserve, and disclose your account information and Content where we believe in good faith that doing so is reasonably necessary to: (a) comply with applicable law, regulation, or a valid legal process or governmental request; (b) enforce these Terms, including investigating potential violations; (c) address fraud, security, or technical issues; (d) respond to your support requests; or (e) protect the rights, property, or safety of EBN, its Members, or the public. EBN does not disclose personally identifiable information to third parties except as described in the Privacy Policy.
+            </p>
+
+            <h4>5.5 Marketing Consent</h4>
+            <p>
+              By providing your phone number or email address, you consent to receive communications from EBN regarding chapter events, membership, and marketing, including by SMS, WhatsApp, email, or telemarketing call, subject to your right to opt out at any time as described in Section 9.K.
+            </p>
+          </section>
+
+          <!-- 6. Your Account -->
+          <section id="sec-6" class="terms-section">
+            <h3>6. Your Account</h3>
+            <p>
+              You must register for an EBN account to use the Platform's member Services. You are responsible for maintaining the confidentiality of your login credentials and for all activity that occurs under your account. We recommend that you use a strong, unique password and that you notify EBN immediately of any unauthorised use of your account. EBN is not responsible for any loss or damage arising from your failure to safeguard your account credentials.
+            </p>
+          </section>
+
+          <!-- 7. Termination -->
+          <section id="sec-7" class="terms-section">
+            <h3>7. Termination</h3>
+            
+            <h4>7.1 By You</h4>
+            <p>
+              You may terminate your agreement with EBN at any time by deactivating your account and ceasing all use of the Platform.
+            </p>
+
+            <h4>7.2 By EBN</h4>
+            <p>
+              EBN may suspend or terminate your account, or your access to all or part of the Platform, at any time, with or without cause and with or without notice, including where: (a) EBN reasonably believes you have breached these Terms; (b) your conduct creates a risk of, or actual, legal liability for EBN; (c) your account has remained inactive for an extended period; (d) your chapter membership expires, lapses, is not renewed, or is otherwise terminated; or (e) continuing to provide the Services to you is no longer commercially viable for EBN.
+            </p>
+
+            <h4>7.3 Notice and Survival</h4>
+            <p>
+              EBN will make reasonable efforts to notify you of a suspension or termination via the email address linked to your account. Sections 3, 4, 9(D) through 9(H), 10 through 14, and any other provision which by its nature should survive termination, will remain in effect notwithstanding termination of these Terms.
+            </p>
+          </section>
+
+          <!-- 8. Third-Party App Store Terms -->
+          <section id="sec-8" class="terms-section">
+            <h3>8. Third-Party App Store Terms</h3>
+            <p>
+              These Terms are an agreement solely between you and EBN, and are not an agreement with Apple Inc., Google LLC, or any other app-store or platform operator. EBN grants you a licence to use the EBN mobile application on an iOS or Android device that you own or control, as permitted by that platform's own usage rules. To the extent required by an applicable platform's terms, that platform and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.
+            </p>
+          </section>
+
+          <!-- 9. General Terms -->
+          <section id="sec-9" class="terms-section">
+            <h3>9. General Terms</h3>
+            
+            <h4>A. Fees and Payments</h4>
+            <p>
+              Membership in an EBN chapter, and certain Platform features, may require payment of fees, which will be disclosed to you before you are charged and which you will have the opportunity to review and accept. EBN may change fees, features, or specifications from time to time upon reasonable notice, without further obligation to you. All fees may be subject to applicable taxes.
+            </p>
+            <p>
+              You are responsible for providing true, accurate, and current billing information. If your payment method is declined, reversed, or charged back, EBN may suspend the affected Services and require payment by alternative means, and you agree to reimburse reasonable costs, including third-party chargeback fees and legal expenses, incurred in recovering amounts owed.
+            </p>
+
+            <h4>B. No Automated Querying</h4>
+            <p>
+              You may not send automated queries or bulk requests of any kind to the Platform or its systems without EBN's prior written permission.
+            </p>
+
+            <h4>C. Representations and Warranties</h4>
+            <p>
+              For each item of Content you submit, you represent and warrant that: (i) you have the right to submit it and to grant the licences set out in these Terms; (ii) EBN will not need to obtain any licence from, or pay royalties to, any third party in connection with it; (iii) it does not infringe any third party's rights, including intellectual property and privacy rights; and (iv) it complies with these Terms and all applicable laws. Where you submit Content or information relating to a third party (for example, a referral's or a visitor's contact details), you represent that you have obtained that person's consent for the intended use of that information.
+            </p>
+
+            <h4>D. Intellectual Property</h4>
+            <p>
+              All content on the Platform other than Member Content — including the EBN name, brand, logo, graphics, software, interface design, and compilations of data — is the property of EBN or its licensors and is protected under the Copyright Act, 1957, the Trade Marks Act, 1999, and other applicable intellectual property laws. Except as expressly permitted by these Terms, you may not copy, modify, distribute, publicly display, or create derivative works from any part of the Platform.
+            </p>
+
+            <h4>E. Reporting Infringement</h4>
+            <p>
+              EBN respects the intellectual property rights of others and expects Members to do the same. If you believe that Content on the Platform infringes your copyright or trademark, please follow the notice procedures set out in Sections 10 through 13 below.
+            </p>
+
+            <h4>F. Indemnity</h4>
+            <p>
+              You agree to defend, indemnify, and hold harmless EBN and its officers, directors, employees, and agents from and against any claims, losses, damages, liabilities, and reasonable expenses (including attorneys' fees) arising out of or relating to: (i) your use of the Platform; (ii) any actual or alleged breach of your representations, warranties, or obligations under these Terms; or (iii) any Content you submit, including any alleged infringement of a third party's intellectual property or privacy rights.
+            </p>
+
+            <h4>G. Limitation of Liability</h4>
+            <p>
+              To the maximum extent permitted by applicable law, EBN will not be liable for any indirect, incidental, special, punitive, or consequential damages of any kind arising out of or in connection with these Terms, the Platform, or the Services, including damages arising from goods or services obtained, or transactions entered into, through the Platform.
+            </p>
+
+            <h4>H. Disclaimer of Warranties</h4>
+            <p>
+              The Platform and Services are provided on an “as is” and “as available” basis. To the fullest extent permitted by applicable law, EBN disclaims all warranties, express or implied, including any implied warranty of merchantability, fitness for a particular purpose, title, and non-infringement, and does not warrant that the Platform will meet your requirements, be uninterrupted, timely, secure, or error-free, or that Content on the Platform will be accurate or as represented.
+            </p>
+
+            <h4>I. Third-Party Websites</h4>
+            <p>
+              The Platform may contain links to, or otherwise reference, websites or resources operated by unaffiliated third parties. EBN is not responsible for the accuracy, completeness, decency, or legality of content hosted on any such third-party site, and inclusion of a link does not imply endorsement. You access and use any linked third-party site entirely at your own risk.
+            </p>
+
+            <h4>J. Electronic Delivery of Notices</h4>
+            <p>
+              By using the Platform, you consent to receive electronically all communications from EBN, including notices, agreements, and legally required disclosures. EBN may also provide such notices by posting them on the Platform. If you wish to withdraw this consent, you must discontinue your use of the Platform.
+            </p>
+
+            <h4>K. Marketing and Communication Preferences</h4>
+            <p>
+              You may opt out of marketing communications at any time using the unsubscribe mechanism provided in those communications, or by contacting us at <a href="mailto:info@ebnworld.com">info@ebnworld.com</a> and or official contact number- <a href="tel:+917567561450">+91 7567561450</a>. Opting out of marketing will not affect service-related, account, or membership notices, which EBN will continue to send as necessary to administer your membership.
+            </p>
+
+            <h4>L. Governing Law and Jurisdiction</h4>
+            <p>
+              These Terms are governed by the laws of India, without regard to conflict-of-laws principles. Subject to any mandatory consumer-protection forum that cannot be excluded by agreement, the courts at Ahmedabad, Gujarat, India, shall have exclusive jurisdiction over any dispute arising out of or relating to these Terms, and you consent to the exclusive jurisdiction of such courts.
+            </p>
+
+            <h4>M. Severability</h4>
+            <p>
+              If any provision of these Terms is held invalid, illegal, or unenforceable by a court or tribunal of competent jurisdiction, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will continue in full force and effect.
+            </p>
+
+            <h4>N. Waiver</h4>
+            <p>
+              No failure or delay by EBN in exercising any right or remedy under these Terms will operate as a waiver of that right or remedy, and no single or partial exercise of a right will prevent EBN's further exercise of that or any other right.
+            </p>
+
+            <h4>O. Relationship of the Parties</h4>
+            <p>
+              EBN is not your agent, fiduciary, trustee, or representative. Nothing in these Terms creates a partnership, joint venture, agency, or employment relationship between you and EBN, and these Terms are intended solely for the benefit of you and EBN.
+            </p>
+
+            <h4>P. No Resale Right</h4>
+            <p>
+              You agree not to sell, resell, reproduce, duplicate, distribute, or otherwise commercially exploit any portion of the Platform, or your access to it, beyond the limited rights expressly granted to you in these Terms.
+            </p>
+
+            <h4>Q. Force Majeure</h4>
+            <p>
+              EBN will be excused from liability for any delay or failure to perform its obligations arising from any cause beyond its reasonable control, whether foreseeable, including natural disaster, fire, war, labour disturbance, internet or telecommunications failure, governmental act, or similar event.
+            </p>
+          </section>
+
+          <!-- 10. Copyright Infringement Report -->
+          <section id="sec-10" class="terms-section">
+            <h3>10. Copyright Infringement Report</h3>
+            <p>
+              EBN operates the Platform as an intermediary within the meaning of the Information Technology Act, 2000, and is not in a position to verify the originality of Content posted by Members. If you are a copyright owner, or authorised to act on a copyright owner's behalf, and believe that Content on the Platform infringes your copyright, you may submit a written notice to EBN's Grievance Officer (see Section 14) or to the email address below. To be actionable, your notice must include:
+            </p>
+            <ul>
+              <li>Identification of the copyrighted work you believe has been infringed, or, where multiple works at a single location on the Platform are covered by a single notice, a representative list of those works;</li>
+              <li>Identification of the material you claim is infringing, together with information reasonably sufficient to allow EBN to locate it on the Platform (for example, a profile link, post identifier, or screenshot);</li>
+              <li>Your name, postal address, telephone number, and email address;</li>
+              <li>A statement that you have a good-faith belief that the use complained of is not authorised by the copyright owner, its agent, or the law;</li>
+              <li>A statement, made under penalty of perjury (or an equivalent solemn declaration where you are outside a jurisdiction recognising that concept), that the information in your notice is accurate and that you are the owner, or are authorised to act on behalf of the owner, of the exclusive right that is allegedly infringed; and</li>
+              <li>Your physical or electronic signature.</li>
+            </ul>
+            <div class="grievance-box">
+              <div class="grievance-title">Notices should be addressed to:</div>
+              <p class="mb-1"><strong>Elite Business Network LLP (EBN)</strong></p>
+              <p class="mb-1">Attn: Grievance Officer / Legal Team</p>
+              <p class="mb-1">A-309, Titanium Heights, Makarba, Ahmedabad, Gujarat, India - 382210</p>
+              <p class="mb-0">Email: <a href="mailto:info@ebnworld.com" class="contact-badge">info@ebnworld.com</a></p>
+            </div>
+            <p class="mt-3">
+              On receiving a notice that substantially complies with the above, EBN will investigate under the Copyright Act, 1957 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, and may temporarily disable access to the allegedly infringing material while the investigation is pending, without liability to the Member who posted it. Where EBN determines the complaint is well-founded, it may permanently remove the material and suspend the relevant Member's account. Where EBN determines the complaint is not well-founded, it will restore access to the material.
+            </p>
+          </section>
+
+          <!-- 11. Copyright Counter-Notice -->
+          <section id="sec-11" class="terms-section">
+            <h3>11. Copyright Counter-Notice</h3>
+            <p>
+              If your Content was removed or disabled in response to a notice under Section 10 and you believe this occurred because of a mistake or misidentification of the material, you may submit a counter-notice to the address given in Section 10. To be actionable, your counter-notice must include:
+            </p>
+            <ul>
+              <li>Identification of the material that was removed or disabled, and the location at which it appeared on the Platform before removal;</li>
+              <li>A statement, made under penalty of perjury, that you have a good-faith belief the material was removed or disabled as a result of a mistake or misidentification of the material;</li>
+              <li>Your name, address, and telephone number, together with a statement that you consent to the jurisdiction of the courts identified in Section 9.L (or, if you are located outside India, to the jurisdiction of a court in which EBN may be found), and that you will accept service of process from the person who submitted the original notice, or their agent; and</li>
+              <li>Your physical or electronic signature.</li>
+            </ul>
+            <p>
+              On receiving a counter-notice that substantially complies with the above, EBN will promptly provide a copy to the person who submitted the original notice and inform them that EBN intends to restore the removed material within a reasonable period, ordinarily not less than ten (10) and not more than fourteen (14) business days, unless that person first informs EBN that they have initiated legal proceedings seeking a court order to restrain the Member from engaging in the allegedly infringing activity.
+            </p>
+          </section>
+
+          <!-- 12. Trademark Infringement Report -->
+          <section id="sec-12" class="terms-section">
+            <h3>12. Trademark Infringement Report</h3>
+            <p>
+              If you hold a valid, registered trademark or service mark (registered with the Trade Marks Registry of India, the applicable intellectual property office of your country, or, for marks used in the United States, the USPTO Principal Register — state-only or supplemental registrations are not sufficient) and believe it is being infringed by Content on the Platform, you may submit a written complaint to the address given in Section 10, including:
+            </p>
+            <ul>
+              <li>The trademark, service mark, trade dress, or other indicium of origin claimed to be infringed, including its registration number;</li>
+              <li>The jurisdiction or geographical area in which the mark is registered;</li>
+              <li>Your name, postal address, and telephone number as the owner of the mark;</li>
+              <li>The goods or services covered by the mark, and its date of first use and, if applicable, first use in commerce;</li>
+              <li>A description of the manner in which you believe the mark is being infringed, and the precise location of the allegedly infringing material on the Platform; and</li>
+              <li>A good-faith certification, signed under penalty of perjury, that the Content identified infringes your rights and that the information provided is accurate.</li>
+            </ul>
+            <p>
+              EBN will investigate complaints that substantially comply with the above and may, at its discretion, temporarily remove the allegedly infringing material while the investigation is pending. Where EBN determines the complaint is well-founded, it may permanently remove the material and suspend the relevant Member's account; where EBN determines the complaint is not well-founded, it will restore access to the material.
+            </p>
+          </section>
+
+          <!-- 13. Trademark Counter-Notice -->
+          <section id="sec-13" class="terms-section">
+            <h3>13. Trademark Counter-Notice</h3>
+            <p>
+              If you receive a notice of trademark infringement under Section 12 and believe, in good faith, that the material was removed or disabled as a result of a mistake or misidentification, you may submit a counter-notice to the address given in Section 10, including the same categories of information described in Section 11 above (identification of the material and its location prior to removal, a good-faith statement made under penalty of perjury, your contact details, and your consent to jurisdiction and to service of process). EBN will process a trademark counter-notice in the same manner, and within the same timeframes, described in Section 11.
+            </p>
+          </section>
+
+          <!-- 14. Grievance Redressal -->
+          <section id="sec-14" class="terms-section">
+            <h3>14. Grievance Redressal</h3>
+            <p>
+              In accordance with the Information Technology Act, 2000 and the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, EBN has appointed a Grievance Officer to receive and address complaints regarding the Platform, including complaints relating to Content, privacy, or alleged intellectual property infringement. You may contact the Grievance Officer at:
+            </p>
+            <div class="grievance-box">
+              <div class="grievance-title">Grievance Officer - Data Protection Officer</div>
+              <p class="mb-1"><strong>Elite Business Network LLP (EBN)</strong></p>
+              <p class="mb-1">A-309, Titanium Heights, Makarba, Ahmedabad, Gujarat, India - 382210</p>
+              <p class="mb-2">Email: <a href="mailto:info@ebnworld.com" class="contact-badge">info@ebnworld.com</a></p>
+              <p class="mb-0">Phone: <a href="tel:+91757561450" class="contact-badge">+91 757561450</a></p>
+            </div>
+            <p class="mt-3">
+              The Grievance Officer will acknowledge a complaint within twenty-four (24) hours of receipt and will endeavour to resolve it within the timelines prescribed under applicable law.
+            </p>
+          </section>
+
+          <!-- 15. Changes to These Terms -->
+          <section id="sec-15" class="terms-section">
+            <h3>15. Changes to These Terms</h3>
+            <p>
+              EBN may revise these Terms from time to time. If we make a material change, we will provide reasonable notice by posting the updated Terms on the Platform and updating the “Effective Date” above, and, where required by applicable law, by email or in-app notice. Your continued use of the Platform after the effective date of a change constitutes your acceptance of the revised Terms.
+            </p>
+          </section>
+
+          <!-- 16. Contact Us -->
+          <section id="sec-16" class="terms-section">
+            <h3>16. Contact Us</h3>
+            <p>
+              If you have any questions about these Terms, please contact us at <a href="mailto:info@ebnworld.com">info@ebnworld.com</a>, or write to us at A-309, Titanium Heights, Makarba, Ahmedabad, Gujarat, India - 382210.
+            </p>
+            <p class="mt-4 text-secondary small">
+              &copy; 2026 Elite Business Network LLP (EBN). All rights reserved.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================
+     FOOTER
+  ============================== -->
+  <footer class="ebn-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+          <div class="footer-brand">
+            <div class="mb-3">
+              <img src="logo.png" alt="EBN Logo" class="brand-logo-img"
+                style="height: 100px; width: 100px; object-fit: contain; border-radius: 16px;">
+            </div>
+            <p class="footer-desc">Elite Business Network - where serious business owners build the relationships
+              that drive exponential growth.</p>
+            <p class="footer-desc mt-2 text-secondary" style="font-size: 0.82rem;">
+              <i class="bi bi-geo-alt-fill me-1"></i> Ahmedabad, Gujarat, India.
+            </p>
+          </div>
+          <div class="social-links mt-4">
+            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Network</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About EBN</a></li>
+            <li><a href="index.html#why-ebn">Why EBN</a></li>
+            <li><a href="index.html#membership">Membership</a></li>
+            <li><a href="index.html#events-training">Events & Training</a></li>
+            <li><a href="index.html#process">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Resources</h6>
+          <ul class="footer-links">
+            <li><a href="index.html#resources">Business Directory</a></li>
+            <li><a href="index.html#resources">Success Stories</a></li>
+            <li><a href="index.html#resources">Gallery</a></li>
+            <li><a href="index.html#resources">Blog & Insights</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Downloads</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <h6 class="footer-heading">Contact Us</h6>
+          <div class="footer-contact mt-3">
+            <div class="fc-row mb-2" style="font-size: 0.88rem; white-space: nowrap;"><i
+                class="bi bi-envelope me-2"></i>
+              info@ebnworld.com</div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-hr" />
+      <div class="footer-bottom">
+        <span>&copy; 2026 Elite Business Network LLP (EBN). All Rights Reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="refund-cancellation.html">Refund & Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js?v=3"></script>
+  
+  <script>
+    // Active Table of Contents highlighting during scroll
+    window.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const id = entry.target.getAttribute('id');
+          const tocLink = document.querySelector(`.toc-link[href="#${id}"]`);
+          if (tocLink) {
+            if (entry.intersectionRatio > 0) {
+              document.querySelectorAll('.toc-link').forEach(link => link.classList.remove('active'));
+              tocLink.classList.add('active');
+            }
+          }
+        });
+      }, {
+        rootMargin: '-10% 0px -70% 0px'
+      });
+
+      // Track all sections
+      document.querySelectorAll('.terms-section').forEach((section) => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+
+</html>

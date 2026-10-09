@@ -42,7 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-
+        // Capture debug logging to a variable to return in JSON
+        $debugLog = "";
+        $mail->SMTPDebug = 3;
+        $mail->Debugoutput = function($str, $level) use (&$debugLog) {
+            $debugLog .= $str . "\n";
+        };
 
         // --- 1. Send data to admin ---
         $mail->setFrom('info@ebnworld.com', 'EBN Website');
@@ -89,9 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->smtpClose(); // Close the connection after sending both emails
 
-        echo json_encode(["status" => "success", "message" => "Message sent successfully!"]);
+        echo json_encode(["status" => "success", "message" => "Message sent successfully!", "debug" => $debugLog]);
     } catch (Exception $e) {
-        echo json_encode(["status" => "error", "message" => "Message could not be sent. Mailer Error: {$mail->ErrorInfo}"]);
+        echo json_encode(["status" => "error", "message" => "Message could not be sent. Mailer Error: {$mail->ErrorInfo}", "debug" => $debugLog]);
     }
 } else {
     echo json_encode(["status" => "error", "message" => "Invalid request method."]);

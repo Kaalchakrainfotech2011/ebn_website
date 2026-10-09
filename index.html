@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="style.css?v=1.0.1" />
+  <link rel="stylesheet" href="style.css?v=1.0.5" />
 </head>
 
 <body>
@@ -43,7 +43,7 @@
           <li class="nav-item"><a class="nav-link fw-500" href="#faq">FAQ</a></li>
           <li class="nav-item"><a class="nav-link fw-500" href="#contact">Contact</a></li>
           <li class="nav-item ms-lg-3">
-            <a href="#apply" class="btn btn-primary-custom px-4 py-2 rounded-pill">Become a Member</a>
+            <a href="#apply" class="btn btn-shiny-member px-4 py-2 rounded-pill">Become a Member</a>
           </li>
         </ul>
       </div>
@@ -82,7 +82,7 @@
               Opportunities.</span>
           </div>
           <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#apply" class="btn btn-primary-custom btn-lg px-5 py-3 rounded-pill">
+            <a href="#apply" class="btn btn-shiny-member btn-lg px-5 py-3 rounded-pill">
               Become a Member <i class="bi bi-arrow-right ms-2"></i>
             </a>
             <a href="#apply" class="btn btn-outline-custom btn-lg px-5 py-3 rounded-pill">
@@ -106,7 +106,7 @@
             <div class="hero-stat-divider"></div>
             <div class="hero-stat-item">
               <div class="stat-value">
-                <span class="stat-num" style="font-size: 1.8rem;">To Be Count</span>
+                <span class="stat-num stat-num-text">To Be Count</span>
               </div>
               <span class="stat-label">Referrals Generated</span>
             </div>
@@ -456,6 +456,9 @@
           <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#leadershipCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
 
         <!-- Carousel Items -->
@@ -463,8 +466,8 @@
 
           <!-- Slide 1: Parth Kaneria -->
           <div class="carousel-item active">
-            <div class="row align-items-center justify-content-center gy-5">
-              <div class="col-lg-9 col-md-10" data-aos="fade-right">
+            <div class="row align-items-center justify-content-between gy-5">
+              <div class="col-lg-7" data-aos="fade-right">
                 <span class="section-label">Founder's Message</span>
                 <h2 class="section-title mt-3">Welcome to Elite Business Network</h2>
                 <p class="section-desc mt-4 fw-600 text-dark">
@@ -492,17 +495,23 @@
                     Network</span>
                 </div>
               </div>
+              <div class="col-lg-5 text-center d-flex justify-content-center justify-content-lg-end" data-aos="fade-left">
+                <div class="founder-image-wrapper">
+                  <div class="founder-image-bg"></div>
+                  <img src="founder_parth_600x840.png" alt="Parth Kaneria" class="founder-image">
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Slide 2: Dr. Vidhi Shah -->
           <div class="carousel-item">
-            <div class="row align-items-center justify-content-center gy-5">
-              <div class="col-lg-9 col-md-10">
-                <span class="section-label">Founding Member's Message</span>
+            <div class="row align-items-center justify-content-between gy-5">
+              <div class="col-lg-7">
+                <span class="section-label">Co-Founder's Message</span>
                 <h2 class="section-title mt-3">Vision for Collective Growth</h2>
                 <p class="section-desc mt-4 fw-600 text-dark">
-                  As one of the founding members, I believe EBN should stand for trust, integrity, and collective
+                  As one of the co-founders, I believe EBN should stand for trust, integrity, and collective
                   growth. My vision is to create a network where businesses don’t just exchange referrals but build
                   long-term partnerships.
                 </p>
@@ -511,12 +520,117 @@
                   accountability, and a genuine “grow together” mindset.
                 </p>
                 <p class="section-desc mt-3">
-                  This has been one of the reasons that pushed me to be part of one of the founding ones.
+                  This has been one of the reasons that pushed me to be one of the co-founders.
                 </p>
                 <div class="mt-4 pt-2">
                   <h5 class="fw-700 m-0 text-primary">Dr. Vidhi Shah</h5>
-                  <span class="text-secondary fw-500" style="font-size: 0.88rem;">Founding Member, Elite Business
+                  <span class="text-secondary fw-500" style="font-size: 0.88rem;">Co-Founder, Elite Business
                     Network</span>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center d-flex justify-content-center justify-content-lg-end">
+                <div class="founder-image-wrapper">
+                  <div class="founder-image-bg"></div>
+                  <img src="founder_vidhi_500x700.png" alt="Dr. Vidhi Shah" class="founder-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Nimeet Shah -->
+          <div class="carousel-item">
+            <div class="row align-items-center justify-content-between gy-5">
+              <div class="col-lg-7">
+                <span class="section-label">Co-Founder's Message</span>
+                <h2 class="section-title mt-3">Empowering Entrepreneur Growth</h2>
+                <p class="section-desc mt-4 fw-600 text-dark">
+                  EBN is designed to be the Business world's most trusted entrepreneur growth ecosystem, built on Trust,
+                  innovation, collaboration, and shared prosperity.
+                </p>
+                <p class="section-desc mt-3">
+                  At EBN, we aim to enable entrepreneurs and professionals to create meaningful business relationships,
+                  develop strategic collaborations, exchange knowledge, and unlock opportunities that accelerate
+                  sustainable business growth. Simply believing in 'come together and conquer the World'.
+                </p>
+                <p class="section-desc mt-3 fw-600 text-dark">
+                  Let's grow together irrespective of size or Industry
+                </p>
+                <div class="mt-4 pt-2">
+                  <h5 class="fw-700 m-0 text-primary">Nimeet Shah</h5>
+                  <span class="text-secondary fw-500" style="font-size: 0.88rem;">Co-Founder, Elite Business
+                    Network</span>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center d-flex justify-content-center justify-content-lg-end">
+                <div class="founder-image-wrapper">
+                  <div class="founder-image-bg"></div>
+                  <img src="founder_nimeet_600x840.png" alt="Nimeet Shah" class="founder-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Jignesh Patel -->
+          <div class="carousel-item">
+            <div class="row align-items-center justify-content-between gy-5">
+              <div class="col-lg-7">
+                <span class="section-label">Co-Founder's Message</span>
+                <h2 class="section-title mt-3">Empowering Businesses and Relationships</h2>
+                <p class="section-desc mt-4 fw-600 text-dark">
+                  EBN is envisioned to empower entrepreneurs to build stronger businesses, stronger relationships, and a
+                  stronger Business Community, where the Growth of businesses and Entrepreneurs is ensured.
+                </p>
+                <p class="section-desc mt-3">
+                  EBN is to facilitate entrepreneurs to connect, collaborate, innovate, mentor and create long-term
+                  business value through ethical bonding and networking. Businesses don't just flourish because of
+                  products or services but through people, and EBN is a platform to connect with entrepreneurs who
+                  believe in integrity, collaboration and collective growth.
+                </p>
+                <p class="section-desc mt-3 fw-600 text-dark">
+                  Come together to Gain and Grow
+                </p>
+                <div class="mt-4 pt-2">
+                  <h5 class="fw-700 m-0 text-primary">Jignesh Patel</h5>
+                  <span class="text-secondary fw-500" style="font-size: 0.88rem;">Co-Founder, Elite Business
+                    Network</span>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center d-flex justify-content-center justify-content-lg-end">
+                <div class="founder-image-wrapper">
+                  <div class="founder-image-bg"></div>
+                  <img src="founder_jignesh_600x840.png" alt="Jignesh Patel" class="founder-image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Rachana Shah -->
+          <div class="carousel-item">
+            <div class="row align-items-center justify-content-between gy-5">
+              <div class="col-lg-7">
+                <span class="section-label">Co-Founder's Message</span>
+                <h2 class="section-title mt-3">Cultivating Trust & Mutual Success</h2>
+                <p class="section-desc mt-4 fw-600 text-dark">
+                  EBN is to inspire a culture where businesses grow by promoting other businesses along with and
+                  nurturing a community founded on Trust, ethical leadership and mutual success.
+                </p>
+                <p class="section-desc mt-3">
+                  We strongly believe that businesses are built on Trust and not on transactions, and EBN is designed to
+                  facilitate genuine relationships that create extraordinary opportunities and long-lasting success.
+                </p>
+                <p class="section-desc mt-3 fw-600 text-dark">
+                  Let's Build a Business and a legacy that lasts long
+                </p>
+                <div class="mt-4 pt-2">
+                  <h5 class="fw-700 m-0 text-primary">Rachana Shah</h5>
+                  <span class="text-secondary fw-500" style="font-size: 0.88rem;">Co-Founder, Elite Business
+                    Network</span>
+                </div>
+              </div>
+              <div class="col-lg-5 text-center d-flex justify-content-center justify-content-lg-end">
+                <div class="founder-image-wrapper">
+                  <div class="founder-image-bg"></div>
+                  <img src="founder_rachana_600x840.png" alt="Rachana Shah" class="founder-image">
                 </div>
               </div>
             </div>
@@ -1857,10 +1971,9 @@
       <div class="footer-bottom">
         <span>&copy; 2026 Elite Business Network LLP. All Rights Reserved.</span>
         <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Cancellation Policy</a>
-          <a href="#">Refund Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+          <a href="refund-cancellation.html">Refund & Cancellation Policy</a>
         </div>
       </div>
     </div>
@@ -1873,7 +1986,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 
 </html>

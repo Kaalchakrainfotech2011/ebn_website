@@ -159,6 +159,9 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.innerHTML = originalText;
           btn.disabled = false;
 
+          if (data.debug) {
+            console.log("SMTP Debug Log:\n" + data.debug);
+          }
           if (data.status === 'success') {
             formSuccess.classList.remove('d-none');
             formSuccess.innerHTML = '<i class="bi bi-check-circle-fill text-success me-2"></i>Thank you! Your message has been sent successfully';
@@ -216,6 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.innerHTML = originalText;
           btn.disabled = false;
 
+          if (data.debug) {
+            console.log("SMTP Debug Log:\n" + data.debug);
+          }
           if (data.status === 'success') {
             contactSuccess.classList.remove('d-none');
             contactSuccess.innerHTML = '<i class="bi bi-check-circle-fill text-success me-2"></i>Thank you! Your message has been sent successfully';
